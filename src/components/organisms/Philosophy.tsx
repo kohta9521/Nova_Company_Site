@@ -39,7 +39,7 @@ const Philosophy = () => {
             </h1>
           </div>
           {/* main box */}
-          <div className="h-auto pt-0 pb-10 sm:w-[800px] pr-10">
+          <div className="h-auto pt-0 pb-10 sm:w-[800px] pr-8">
             <TopLeftText
               id="hero-nav"
               textType="blue"
@@ -57,7 +57,7 @@ const Philosophy = () => {
               <br />
               パソコン一台で、ただの文字の羅列が意味を持ち形になる。
               <br />
-              こんな楽しいことはない。
+              こんなに楽しいことはない。
               <br />
               メンバー全員大学生という肩書を持ちながら、エンジニアとして自分のスキルを社会で発揮しています。
               <br />
