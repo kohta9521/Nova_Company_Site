@@ -1,7 +1,7 @@
 import React from "react";
 
 // next
-import Image from "next/image";
+// import Image from "next/image";
 
 // components
 import TopLeftText from "../atoms/TopLeftText";
@@ -11,13 +11,13 @@ import ListItem from "../atoms/ListItem";
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen border-b-[0.3px] border-b-gray-300 flex">
+    <div className="w-full h-screen border-b-[1px] border-b-gray-300 flex">
       {/* left box */}
-      <div className="w-[40px] border-r-[0.3px] border-r-gray-300">
+      <div className="w-[40px] border-r-[1px] border-r-gray-300 box-border">
         <TopLeftText id="hero" textType="gray" text="01" />
       </div>
       {/* nav box pc */}
-      <div className="hidden sm:block sm:w-[200px] sm:border-r-[0.3px] sm:border-r-gray-300">
+      <div className="hidden sm:block sm:w-[200px] sm:border-r-[1px] sm:border-r-gray-300">
         <TopLeftText id="hero-nav" textType="blue" text="<nav>" />
         <div className="mt-16 sm:mt-24">
           <ListItem id="hero-about" link="/" size="small" text="About" />
@@ -28,9 +28,9 @@ const Hero = () => {
         </div>
       </div>
       {/* main box */}
-      <div className="w-[calc(screen - 40px)] sm:w-full">
+      <div className="flex-1 sm:h-[calc(100vh - 280px)] flex flex-col">
         {/* nav box mobile */}
-        <div className="w-full h-[370px] border-b-[0.3px] border-b-gray-300 sm:w-[calc(screen - 240px)]">
+        <div className="w-full h-[370px] border-b-[1px] border-b-gray-300 sm:w-[calc(100vw - 240px)]">
           <TopLeftText
             id="hero-nav"
             textType="blue"
@@ -44,7 +44,7 @@ const Hero = () => {
             を提供する
           </h1>
         </div>
-        <div className="block w-full h-[150px]  border-b-[0.3px] border-b-gray-300 md:hidden">
+        <div className="block w-full h-[150px] border-b-[1px] border-b-gray-300 md:hidden">
           <TopLeftText id="hero-nav" textType="blue" text="<nav>" />
           <div className="flex mt-5">
             <div className="w-auto mr-6">
@@ -59,15 +59,15 @@ const Hero = () => {
           </div>
         </div>
         {/* Image */}
-        <div className="w-full h-full">
-          <Image
-            className="w-full h-auto"
-            src="/images/img-04.webp"
-            width={600}
-            height={1000}
-            quality={100}
-            alt="hero-image"
-          />
+        <div className="w-full flex-1 bg-[var(--main-red)]">
+          {/* <Image
+      className="w-full h-auto"
+      src="/images/img-04.webp"
+      width={600}
+      height={1000}
+      quality={100}
+      alt="hero-image"
+    /> */}
         </div>
       </div>
     </div>
