@@ -1,4 +1,9 @@
 import React from "react";
+
+// next
+import Image from "next/image";
+
+// components
 import TopLeftText from "../atoms/TopLeftText";
 import ListItem from "../atoms/ListItem";
 
@@ -54,6 +59,16 @@ const Hero = () => {
           </div>
         </div>
         {/* Image */}
+        <div className="w-full h-full">
+          <Image
+            className="w-full h-auto"
+            src="/images/img-04.webp"
+            width={600}
+            height={1000}
+            quality={100}
+            alt="hero-image"
+          />
+        </div>
       </div>
     </div>
   );
