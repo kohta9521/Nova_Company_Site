@@ -13,7 +13,7 @@ export default function Home() {
         <p className="text-white">Image Insert</p>
       </div>
       <Service />
-      <div className="w-full h-[500px]"></div>
+      {/* <div className="w-full h-[500px]"></div> */}
     </>
   );
 }
