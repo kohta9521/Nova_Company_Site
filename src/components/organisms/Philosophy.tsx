@@ -1,10 +1,15 @@
+"use client";
 import React from "react";
+
+// hooks
+import useAOS from "@/hooks/useAOS";
 
 // components
 import TopLeftText from "../atoms/TopLeftText";
 import ListBlockItem from "../atoms/ListBlockItem";
 
 const Philosophy = () => {
+  useAOS();
   return (
     <div className="w-full h-auto border-b-[1px] border-b-gray-300">
       <div className="flex w-full">
@@ -20,7 +25,10 @@ const Philosophy = () => {
               textType="blue"
               text='<h1 class="philosophy-title">'
             />
-            <h1 className="mt-12 sm:mt-26 ml-5 text-4xl sm:text-5xl font-semibold leading-relaxed">
+            <h1
+              data-aos="fade-up"
+              className="mt-12 sm:mt-26 ml-5 text-4xl sm:text-5xl font-semibold leading-relaxed"
+            >
               全ての人が
               <br />
               <span className="text-[var(--main-red)]">IT</span>を駆使して
@@ -31,13 +39,16 @@ const Philosophy = () => {
             </h1>
           </div>
           {/* main box */}
-          <div className="h-auto pt-0 pb-10 sm:w-[800px] pr-10">
+          <div className="h-auto pt-0 pb-10 sm:w-[800px] pr-8">
             <TopLeftText
               id="hero-nav"
               textType="blue"
               text='<p class="philosophy-text">'
             />
-            <p className="mt-10 mb-5 sm:mt-30 ml-5 text-medium font-semibold leading-7">
+            <p
+              data-aos="fade-up"
+              className="mt-10 mb-5 sm:mt-30 ml-5 text-medium font-semibold leading-7"
+            >
               <span className="text-[var(--main-red)]">
                 ITで人の役に立つのに年齢制限はない
               </span>
@@ -46,12 +57,12 @@ const Philosophy = () => {
               <br />
               パソコン一台で、ただの文字の羅列が意味を持ち形になる。
               <br />
-              こんな楽しいことはない。
+              こんなに楽しいことはない。
               <br />
               メンバー全員大学生という肩書を持ちながら、エンジニアとして自分のスキルを社会で発揮しています。
               <br />
               <span className="text-[var(--main-red)]">
-                年齢・肩書で判断される時代ではない。
+                年齢・肩書で判断される時代はもう終わった。
               </span>
               <br />
               私たちはそれを証明し続けます。
