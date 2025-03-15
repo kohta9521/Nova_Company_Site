@@ -14,7 +14,7 @@ const TopLeftText = ({ id, textType, text }: TopLeftTextProps) => {
   return (
     <p
       key={id}
-      className={`relative top-2  left-[6px] sm:left-[10px] text-left text-xs font-thin ${textStyle}`}
+      className={`inline-block relative top-2  left-[13px] sm:left-[13px] text-left text-xs font-thin ${textStyle}`}
     >
       {text}
     </p>

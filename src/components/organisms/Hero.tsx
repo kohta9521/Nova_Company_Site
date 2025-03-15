@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <div className="w-full h-screen border-b-[1px] border-b-gray-300 flex">
       {/* left box */}
-      <div className="w-[40px] border-r-[1px] border-r-gray-300">
+      <div className="w-[40px] border-r-[1px] border-r-gray-300 box-border">
         <TopLeftText id="hero" textType="gray" text="01" />
       </div>
       {/* nav box pc */}
@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
       </div>
       {/* main box */}
-      <div className="w-[calc(100vw - 40px)] sm:w-full sm:h-[calc(100vh - 280px)] flex flex-col">
+      <div className="flex-1 sm:h-[calc(100vh - 280px)] flex flex-col">
         {/* nav box mobile */}
         <div className="w-full h-[370px] border-b-[1px] border-b-gray-300 sm:w-[calc(100vw - 240px)]">
           <TopLeftText
