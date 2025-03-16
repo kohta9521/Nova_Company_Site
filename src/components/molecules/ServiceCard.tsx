@@ -38,7 +38,7 @@ const ServiceCard = ({
     >
       <div className="block  sm:flex sm:items-center sm:justify-between sm:gap-5">
         {/* image box */}
-        <div className="sm:w-[40%] sm:h-full bg-[var(--main-red)] overflow-hidden sm:border-r-[1px] sm:border-r-gray-300">
+        <div className="sm:w-[650px] sm:h-full bg-[var(--main-red)] overflow-hidden sm:border-r-[1px] sm:border-r-gray-300">
           <Image
             className="w-full h-auto"
             src={img}
