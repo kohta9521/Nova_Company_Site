@@ -2,6 +2,7 @@ import Header from "@/components/organisms/Header";
 import Hero from "@/components/organisms/Hero";
 import Philosophy from "@/components/organisms/Philosophy";
 import Service from "@/components/organisms/Service";
+import Works from "@/components/organisms/Work";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
         <p className="text-white">Image Insert</p>
       </div>
       <Service />
-      {/* <div className="w-full h-[500px]"></div> */}
+      <Works />
+      <div className="w-full h-[500px]"></div>
     </>
   );
 }
