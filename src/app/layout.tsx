@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 const appUrl = process.env.NEXT_PUBLIC_APP_URL;
-const title = "NEO TOKYO PROJCET | 公式ホームページ";
+const title = "NOVA | 公式ホームページ";
 const description =
   "バッククラウン度に関わらず、すべての人に価値を提供する。全く新しい世界を皆さんにお届けします。";
 

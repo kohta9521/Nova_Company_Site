@@ -27,7 +27,7 @@ const Hero = () => {
         <div data-aos="fade-up" className="mt-16 sm:mt-24">
           <ListItem id="hero-about" link="/" size="small" text="About" />
           <ListItem id="hero-about" link="/" size="small" text="Services" />
-          <ListItem id="hero-about" link="/" size="small" text="Works" />
+          <ListItem id="hero-about" link="#works" size="small" text="Works" />
           <ListItem id="hero-about" link="/" size="small" text="Company" />
           <ListItem id="hero-about" link="/" size="small" text="Contact" />
         </div>
@@ -58,7 +58,12 @@ const Hero = () => {
             <div className="w-auto mr-6">
               <ListItem id="hero-about" link="/" size="small" text="About" />
               <ListItem id="hero-about" link="/" size="small" text="Services" />
-              <ListItem id="hero-about" link="/" size="small" text="Works" />
+              <ListItem
+                id="hero-about"
+                link="#works"
+                size="small"
+                text="Works"
+              />
             </div>
             <div data-aos="fade-up" className="w-auto">
               <ListItem id="hero-about" link="/" size="small" text="Company" />

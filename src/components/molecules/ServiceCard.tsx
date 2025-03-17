@@ -36,9 +36,9 @@ const ServiceCard = ({
       data-aos="fade-up"
       className="w-full border-b-[1px] border-b-gray-300"
     >
-      <div className="block sm:py-4 sm:flex sm:items-center sm:justify-between sm:gap-5">
+      <div className="block  sm:flex sm:items-center sm:justify-between sm:gap-5">
         {/* image box */}
-        <div className="sm:w-[40%] sm:h-[300px] bg-[var(--main-red)] overflow-hidden">
+        <div className="sm:w-[650px] sm:h-full bg-[var(--main-red)] overflow-hidden sm:border-r-[1px] sm:border-r-gray-300">
           <Image
             className="w-full h-auto"
             src={img}
