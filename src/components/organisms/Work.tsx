@@ -7,9 +7,6 @@ import Image from "next/image";
 // hooks
 import useAOS from "@/hooks/useAOS";
 
-// icon
-import { MdWeb } from "react-icons/md";
-
 // components
 import TopLeftText from "../atoms/TopLeftText";
 import ListBlockItem from "../atoms/ListBlockItem";

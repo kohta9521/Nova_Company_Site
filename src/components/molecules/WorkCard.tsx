@@ -3,6 +3,7 @@ import React from "react";
 
 // next
 import Link from "next/link";
+import Image from "next/image";
 
 // hooks
 import useAOS from "@/hooks/useAOS";
@@ -13,6 +14,7 @@ import TopLeftText from "../atoms/TopLeftText";
 // props
 export type WorkCardProps = {
   id: string;
+  img: string;
   title: string;
   subtitle: string;
   tag: string;
@@ -23,7 +25,7 @@ export type WorkCardProps = {
 
 const WorkCard = ({
   id,
-  icon,
+  img,
   title,
   subtitle,
   tag,
@@ -44,6 +46,7 @@ const WorkCard = ({
         text='<li class="work-card">'
       />
       <div className="ml-3 mt-10">
+        <Image src={img} width={400} height={200} alt="card-image" />
         <p className="mb-1 text-4xl font-semibold">{title}</p>
         <p className="mb-2 text-sm text-[var(--main-red)] font-semibold">
           {subtitle}
