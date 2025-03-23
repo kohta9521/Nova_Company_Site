@@ -10,7 +10,7 @@ import useAOS from "@/hooks/useAOS";
 // components
 import TopLeftText from "../atoms/TopLeftText";
 import ListBlockItem from "../atoms/ListBlockItem";
-import WorkCard from "../molecules/WorkCard";
+// import WorkCard from "../molecules/WorkCard";
 
 const Works = () => {
   useAOS();
@@ -24,7 +24,7 @@ const Works = () => {
         {/* main box */}
         <div className="w-[100%]">
           {/* section title box */}
-          <div className="w-full h-[100px] sm:h-[130px] border-b-[1px] border-b-gray-300">
+          <div className="w-auto h-[100px] sm:h-[130px] border-b-[1px] border-b-gray-300">
             <div className="sm:block sm:w-[1050px] sm:h-[100%] sm:border-r-[1px] border-r-gray-300">
               <TopLeftText
                 id="hero-nav"
@@ -77,7 +77,7 @@ const Works = () => {
                   <br />
                   実現しています。
                 </h1>
-                <p className="mb-3 sm:mb-8 ml-5 text-medium font-semibold leading-7">
+                <p className="mb-3 w-11/12 sm:w-10/12 sm:mb-8 ml-5 text-medium font-semibold leading-7">
                   実務経験を積んだ様々な知見を持つエンジニアがクライアント様のご要望に最大限寄り添った提案をさせていただきます。
                   <br />
                   エンジニアリングの業務だけにとどまらずDX化のご提案やデザインの作成・動画の作成まで幅広く対応をさせていただきます。
@@ -97,7 +97,7 @@ const Works = () => {
           {/* grid design box */}
           <div className="w-full">
             {/* top box */}
-            <div className="w-full flex">
+            {/* <div className="w-full flex">
               <WorkCard
                 id="card-1"
                 title="Webサイト構築"
@@ -134,14 +134,14 @@ const Works = () => {
                 tech="使用技術 : React / Next.js / AWS / SEO"
                 link="/"
               />
-            </div>
+            </div> */}
             {/* bottom box */}
-            <div className="w-full flex">
+            {/* <div className="w-full flex">
               <div className="w-1/4 h-[500px] bg-red-500 border-2 border-gray-700"></div>
               <div className="w-1/4 h-[500px] bg-red-500 border-2 border-gray-700"></div>
               <div className="w-1/4 h-[500px] bg-red-500 border-2 border-gray-700"></div>
               <div className="w-1/4 h-[500px] bg-red-500 border-2 border-gray-700"></div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

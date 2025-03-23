@@ -3,6 +3,7 @@ import Hero from "@/components/organisms/Hero";
 import Philosophy from "@/components/organisms/Philosophy";
 import Service from "@/components/organisms/Service";
 import Works from "@/components/organisms/Work";
+// import WorkBottom from "@/components/organisms/WorkBottom";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </div>
       <Service />
       <Works />
+      {/* <WorkBottom /> */}
       <div className="w-full h-[500px]"></div>
     </>
   );

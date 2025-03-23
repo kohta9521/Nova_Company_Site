@@ -40,6 +40,7 @@
     "eslint-config-next": "15.2.2",
     "eslint-plugin-storybook": "^0.11.4",
     "playwright": "^1.51.0",
+    "prisma": "^6.5.0",
     "storybook": "^8.6.4",
     "tailwindcss": "^4",
     "typescript": "^5",
