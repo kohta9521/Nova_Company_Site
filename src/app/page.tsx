@@ -1,3 +1,4 @@
+import Footer from "@/components/organisms/Footer";
 import Header from "@/components/organisms/Header";
 import Hero from "@/components/organisms/Hero";
 import Philosophy from "@/components/organisms/Philosophy";
@@ -17,7 +18,7 @@ export default function Home() {
       <Service />
       <Works />
       {/* <WorkBottom /> */}
-      <div className="w-full h-[500px]"></div>
+      <Footer />
     </>
   );
 }
