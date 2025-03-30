@@ -15,7 +15,7 @@ const ListBlockItem = ({ id, link, text }: ListBlockItemProps) => {
     <Link
       key={id}
       href={link}
-      className="inline-block px-3 py-1.5 rounded-full bg-[var(--main-red)] text-white text-sm text-center"
+      className="inline-block px-4 py-2 rounded-full bg-[var(--main-red)] font-semibold text-white text-sm text-center"
     >
       {text}
     </Link>

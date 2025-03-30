@@ -43,29 +43,23 @@ const Works = () => {
           <div className="w-[100%] h-auto sm:flex">
             <div className="w-full block sm:flex">
               {/* main image */}
-              <div className="sm:w-[1050px] sm:h-auto sm:border-r-[1px] border-r-gray-300">
-                {/* <TopLeftText
-                  id="hero-nav"
-                  textType="blue"
-                  text='<ul class="service-card">'
-                /> */}
+              <div className="sm:w-[1050px] sm:h-auto sm:border-r-[1px] border-r-gray-300 relative">
                 <Image
-                  className="w-full h-full"
-                  src="/images/bg.png"
-                  width={600}
-                  height={600}
-                  layout="responsive"
+                  className="object-cover"
+                  src="/images/work.webp"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 1050px"
                   alt="works hero img"
                 />
               </div>
               {/* main text box */}
-              <div className="h-auto pr-5">
+              <div className="h-auto pr-4">
                 <TopLeftText
                   id="works-nav"
                   textType="blue"
                   text='<div class="works-textbox">'
                 />
-                <h1 className="mt-12 mb-8 sm:mt-16 sm:mb-10 ml-5 text-2xl sm:text-4xl font-semibold leading-relaxed">
+                <h1 className="mt-10 mb-8 sm:mt-10 sm:mb-10 ml-5 text-2xl sm:text-4xl font-semibold leading-relaxed">
                   <span className="text-[var(--main-red)]">学生</span>
                   という立場をフル活用し
                   <br />

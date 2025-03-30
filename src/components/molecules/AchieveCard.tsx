@@ -2,6 +2,7 @@ import React from "react";
 
 // next
 import Link from "next/link";
+import Image from "next/image";
 
 // peops
 export type AchieveCardProps = {
@@ -11,7 +12,7 @@ export type AchieveCardProps = {
   hash: string[];
   maintext: string;
   tech: string[];
-  //   img?: string;
+  img?: string;
   link: string;
 };
 
@@ -22,7 +23,7 @@ const AchieveCard = ({
   hash,
   maintext,
   tech,
-  //   img = "/",
+  img,
   link,
 }: AchieveCardProps) => {
   return (
@@ -43,7 +44,17 @@ const AchieveCard = ({
           </p>
         ))}
       </div>
-      <div className="w-full h-[300px] bg-[var(--main-red)]">{/* img */}</div>
+      <div className="w-full h-[300px] relative">
+        {img && (
+          <Image
+            className="object-cover"
+            src={img}
+            fill
+            sizes="(max-width: 768px) 100vw, 33vw"
+            alt="achieve-image-1"
+          />
+        )}
+      </div>
       <div className="ml-3 py-4 pb-5">
         <p className="text-base font-medium mb-3">{maintext}</p>
         <div className="w-full mb-4 flex items-center">
