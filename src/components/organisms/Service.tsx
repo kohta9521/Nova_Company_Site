@@ -47,8 +47,16 @@ const Service = () => {
               <ServiceCard
                 id="service-1"
                 img="/images/bg.png"
+                subtitle="ITコンサル事業"
+                title="Stratechion"
+                desc="Stratechionは、企業の成長を支えるITコンサルティングサービスです。信頼できる情報とリソースを活用し、迅速かつ丁寧なサポートを提供。特にアーリーステージの企業を支援し、技術的課題を解決することで、成功へと導きます。戦略・テクノロジー・ビジョンを融合し、最適なソリューションを手頃な価格で提供します。"
+                link="/"
+              />
+              <ServiceCard
+                id="service-1"
+                img="/images/bg.png"
                 subtitle="Saas事業"
-                title="WEB TRUST"
+                title="WEB Hack"
                 desc="受託のWeb開発事業です。簡単な1ページのLPから会社様のコーポレートサイト。ECサイトやブログ構築など幅広く対応をしております。ヒアリングからデザイン、コーディングテストまで一貫して当社で行うことで他社には真似できないスピード感と若者の感性、クオリティを実現しています。"
                 link="/"
               />

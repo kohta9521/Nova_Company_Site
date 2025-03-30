@@ -1,7 +1,8 @@
 import Achieve from "@/components/organisms/Achieve";
-import Footer from "@/components/organisms/Footer";
+// import Footer from "@/components/organisms/Footer";
 import Header from "@/components/organisms/Header";
 import Hero from "@/components/organisms/Hero";
+import Member from "@/components/organisms/Member";
 import Philosophy from "@/components/organisms/Philosophy";
 import Service from "@/components/organisms/Service";
 import Works from "@/components/organisms/Work";
@@ -20,7 +21,8 @@ export default function Home() {
       <Works />
       {/* <WorkBottom /> */}
       <Achieve />
-      <Footer />
+      <Member />
+      {/* <Footer /> */}
     </>
   );
 }
